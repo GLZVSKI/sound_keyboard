@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "Sound clicker",
+    "version": "0.1",
+    "description": "Озвучка нажатий клавиш",
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["main.js"],
+            "css": ["style.css"]
+        }
+    ],
+    "web_accessible_resources": [
+        "sound/*.mp3"
+    ]
+}
